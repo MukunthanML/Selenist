@@ -16,6 +16,5 @@ public class SeleniumConsumers {
     // Consumer to get text from a WebElement
     public static final Consumer<WebElement> GET_TEXT= element -> {
         System.out.println("Element text: " + element.getText());
-
     };
 }
