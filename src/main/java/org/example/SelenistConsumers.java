@@ -3,7 +3,7 @@ package org.example;
 import org.openqa.selenium.WebElement;
 import java.util.function.Consumer;
 
-public class SeleniumConsumers {
+public class SelenistConsumers {
 
     // Consumer to click on a WebElement
     public static final Consumer<WebElement> CLICK = WebElement::click;

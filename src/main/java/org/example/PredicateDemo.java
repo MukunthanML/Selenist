@@ -7,6 +7,7 @@ public class PredicateDemo {
         public static void main(String[] args) {
             // creating a predicate to test if a string is empty
             Predicate<String> isEmpty = String::isEmpty;
+//            Predicate<String> isEmpty = s -> s.isEmpty();
 
             // testing the predicate
             System.out.println(isEmpty.test(""));    // true

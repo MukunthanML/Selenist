@@ -3,7 +3,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.Objects;
 import java.util.function.Predicate;
-public class SeleniumPredicates {
+public class SelenistPredicates {
 
     // Predicate to check if element is present
     public static Predicate<? super String> isElementPresent() {
@@ -21,7 +21,7 @@ public class SeleniumPredicates {
     }
 
     // Predicate to check if element has specific text
-    public static Predicate<WebElement> elementHasText(String expectedText) {
+    public static Predicate<WebElement> hasElementTextAs(String expectedText) {
         return element -> {
             System.out.println("Given Text: "+ expectedText);
             System.out.println("Actual Text: "+ element.getText());
@@ -31,7 +31,7 @@ public class SeleniumPredicates {
     }
 
     // Predicate to check if element has a specific attribute with a given value
-    public static Predicate<WebElement> elementHasAttribute(String attributeName, String attributeValue) {
+    public static Predicate<WebElement> hasElementAttributeAndValueAs(String attributeName, String attributeValue) {
         return element -> element.getAttribute(attributeName).equals(attributeValue);
     }
 
